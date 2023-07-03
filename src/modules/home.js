@@ -1,4 +1,4 @@
-function loadPage() {
+function loadHome() {
   const content = document.getElementById("content");
 
   const header = document.createElement("div");
@@ -17,4 +17,4 @@ function loadPage() {
   content.append(header, home);
 }
 
-export default loadPage;
+export default loadHome;

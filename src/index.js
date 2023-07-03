@@ -1,3 +1,7 @@
-import loadPage from "./modules/initial-page-load";
+import loadHome from "./modules/home";
 
-loadPage();
+init();
+
+function init() {
+  loadHome();
+}
