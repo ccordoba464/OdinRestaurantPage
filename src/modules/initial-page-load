@@ -1,0 +1,12 @@
+function loadPage() {
+  const content = document.getElementById("content");
+
+  const header = document.createElement("div");
+  header.id = "header";
+
+  const home = document.createElement("div");
+  home.id = "home";
+
+  const description = document.createElement("div");
+  description.id = "description";
+}
