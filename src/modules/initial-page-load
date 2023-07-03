@@ -1,20 +1,54 @@
 function loadPage() {
   const content = document.getElementById("content");
 
-  const header = document.createElement("div");
-  header.id = "header";
-  header.textContent = "Rimbo's Pizzeria";
+  const header = createHeader();
 
+  const home = createBody();
+
+  content.append(header, home);
+}
+
+function createHeader() {
+  const header = document.createElement("div");
+
+  const title = document.createElement("div");
+  title.id = "title";
+  title.textContent = "Rimbo's Pizzeria";
+  header.id = "header";
+
+  const nav = createNav();
+
+  header.append(title, nav);
+
+  return header;
+}
+
+function createNav() {
+  const nav = document.createElement("nav");
+  nav.id = "nav";
+
+  const ul = document.createElement("ul");
+
+  const homeTab = document.createElement("li");
+  homeTab.textContent = "Home";
+
+  const contactTab = document.createElement("li");
+  contactTab.textContent = "Contact";
+
+  const menuTab = document.createElement("li");
+  menuTab.textContent = "Menu";
+
+  ul.append(homeTab, contactTab, menuTab);
+  nav.appendChild(ul);
+
+  return nav;
+}
+
+function createBody() {
   const home = document.createElement("div");
   home.id = "home";
 
-  const description = document.createElement("div");
-  description.id = "description";
-  description.textContent =
-    "Rimbo's Pizzeria is the greatest pizzeria you will step foot in. Pizza made with love and care by fellow Vowel Gang member Rimbo, along with his crewmates SJ and Zeke.";
-
-  home.appendChild(description);
-  content.append(header, home);
+  return home;
 }
 
 export default loadPage;

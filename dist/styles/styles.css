@@ -137,19 +137,49 @@ table {
   height: 100vh;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 1fr 7fr;
+  grid-template-rows: 1fr 5fr;
   overflow: hidden;
 }
 
 #header {
   grid-column: 1 / 4;
-  background-color: red;
+  background-color: rgb(195, 21, 21);
   color: white;
   font-weight: bold;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+#title {
+  background-color: rgba(165, 39, 39, 0.845);
+  border-radius: 12px;
   font-size: 4rem;
+  grid-column: 2 / 3;
+  text-align: center;
+  align-self: center;
+}
+
+#nav {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  font-size: 2rem;
   display: flex;
-  justify-content: center;
   align-items: center;
+}
+
+#nav ul {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: center;
+  gap: 50px;
+}
+
+#nav ul li {
+  background-color: rgba(165, 39, 39, 0.845);
+  border-radius: 12px;
+  padding: 16px 20px;
 }
 
 #home {
@@ -164,7 +194,7 @@ table {
 
 #description {
   box-sizing: border-box;
-  background-color: rgba(255, 0, 0, 0.361);
+  background-color: rgba(165, 39, 39, 0.637);
   color: white;
   display: flex;
   flex-direction: column;
