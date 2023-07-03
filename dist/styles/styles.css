@@ -180,6 +180,7 @@ table {
   background-color: rgba(165, 39, 39, 0.845);
   border-radius: 12px;
   padding: 16px 20px;
+  cursor: pointer;
 }
 
 #home {

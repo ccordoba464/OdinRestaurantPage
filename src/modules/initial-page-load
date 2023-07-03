@@ -31,12 +31,15 @@ function createNav() {
 
   const homeTab = document.createElement("li");
   homeTab.textContent = "Home";
+  homeTab.id = "homeTab";
 
   const contactTab = document.createElement("li");
   contactTab.textContent = "Contact";
+  contactTab.id = "contactTab";
 
   const menuTab = document.createElement("li");
   menuTab.textContent = "Menu";
+  menuTab.id = "menuTab";
 
   ul.append(homeTab, contactTab, menuTab);
   nav.appendChild(ul);
