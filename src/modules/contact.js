@@ -1,9 +1,12 @@
 function loadContact() {
   const home = document.getElementById("home");
-  const description = document.createElement("div");
-  description.id = "contacts";
+  while (home.firstChild) {
+    home.firstChild.remove();
+  }
+  const contacts = document.createElement("div");
+  contacts.id = "contacts";
 
-  home.appendChild(description);
+  home.appendChild(contacts);
 }
 
 export default loadContact;

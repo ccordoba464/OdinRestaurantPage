@@ -1,9 +1,12 @@
 function loadMenu() {
   const home = document.getElementById("home");
-  const description = document.createElement("div");
-  description.id = "contacts";
+  while (home.firstChild) {
+    home.firstChild.remove();
+  }
+  const menu = document.createElement("div");
+  menu.id = "menu";
 
-  home.appendChild(description);
+  home.appendChild(menu);
 }
 
 export default loadMenu;

@@ -1,5 +1,8 @@
 function loadHome() {
   const home = document.getElementById("home");
+  while (home.firstChild) {
+    home.firstChild.remove();
+  }
   const description = document.createElement("div");
   description.id = "description";
   description.textContent =
