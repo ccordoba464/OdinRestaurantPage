@@ -1,1 +1,1 @@
-console.log("Hello!");
+(()=>{"use strict";!function(){const e=document.getElementById("content"),t=document.createElement("div");t.id="header";const n=document.createElement("div");n.id="home";const i=document.createElement("div");i.id="description",i.textContent="Rimbo's Pizzeria is the greatest pizzeria you will step foot in. Pizza made with love and care by fellow Vowel Gang member Rimbo, along with his crewmates SJ and Zeke.",n.appendChild(i),e.append(t,n)}()})();
